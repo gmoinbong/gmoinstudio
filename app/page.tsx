@@ -5,16 +5,20 @@ import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 import { ArrowDown, Mail, Twitter, Gamepad2 } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 
-// Animated particles component
+// Animated particles component (uses client-only dimensions to avoid SSR "window is not defined")
 function Particles() {
+  const [size, setSize] = useState({ w: 1024, h: 768 })
+  useEffect(() => {
+    setSize({ w: window.innerWidth, h: window.innerHeight })
+  }, [])
   const particles = Array.from({ length: 50 })
-  
+
   return (
     <div className="absolute inset-0 overflow-hidden">
       {particles.map((_, i) => (
@@ -22,12 +26,12 @@ function Particles() {
           key={i}
           className="absolute w-1 h-1 bg-primary/30 rounded-full"
           initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
+            x: Math.random() * size.w,
+            y: Math.random() * size.h,
           }}
           animate={{
-            y: [null, Math.random() * window.innerHeight],
-            x: [null, Math.random() * window.innerWidth],
+            y: [null, Math.random() * size.h],
+            x: [null, Math.random() * size.w],
           }}
           transition={{
             duration: Math.random() * 10 + 20,
