@@ -255,20 +255,20 @@ export default function TermsPage() {
           <div className="text-center space-y-3">
             <div>
               <a 
-                href="mailto:legal@yourstudio.com" 
+                href="mailto:hello@gmoinstudio.com" 
                 className="inline-flex items-center gap-2 text-xl text-primary hover:text-primary/80 transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
-                legal@gmoinstudio.com
+                hello@gmoinstudio.com
               </a>
             </div>
             <div>
               <p className="text-gray-400 text-sm">For account issues: </p>
               <a 
-                href="mailto:support@yourstudio.com" 
+                href="mailto:hello@gmoinstudio.com" 
                 className="text-primary hover:text-primary/80 transition-colors duration-300"
               >
-                support@gmoinstudio.com
+                hello@gmoinstudio.com
               </a>
             </div>
             <p className="text-sm text-gray-400">Response time: 48-72 hours</p>
