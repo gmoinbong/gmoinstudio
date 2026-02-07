@@ -259,7 +259,7 @@ export default function TermsPage() {
                 className="inline-flex items-center gap-2 text-xl text-primary hover:text-primary/80 transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
-                legal@yourstudio.com
+                legal@gmoinstudio.com
               </a>
             </div>
             <div>
@@ -268,7 +268,7 @@ export default function TermsPage() {
                 href="mailto:support@yourstudio.com" 
                 className="text-primary hover:text-primary/80 transition-colors duration-300"
               >
-                support@yourstudio.com
+                support@gmoinstudio.com
               </a>
             </div>
             <p className="text-sm text-gray-400">Response time: 48-72 hours</p>

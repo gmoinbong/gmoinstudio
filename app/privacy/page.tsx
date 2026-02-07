@@ -227,11 +227,11 @@ export default function PrivacyPage() {
           </h2>
           <div className="text-center space-y-2">
             <a 
-              href="mailto:privacy@yourstudio.com" 
+              href="mailto:privacy@gmoinstudio.com" 
               className="inline-flex items-center gap-2 text-xl text-primary hover:text-primary/80 transition-colors duration-300"
             >
               <Mail className="w-5 h-5" />
-              privacy@yourstudio.com
+              privacy@gmoinstudio.com
             </a>
             <p className="text-sm text-gray-400">Response time: 48-72 hours</p>
           </div>
