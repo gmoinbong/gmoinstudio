@@ -263,7 +263,7 @@ export default function TermsPage() {
               </a>
             </div>
             <div>
-              <p className="text-gray-400 text-sm">For account issues:</p>
+              <p className="text-gray-400 text-sm">For account issues: </p>
               <a 
                 href="mailto:support@yourstudio.com" 
                 className="text-primary hover:text-primary/80 transition-colors duration-300"
