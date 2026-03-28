@@ -165,7 +165,7 @@ export default function Page() {
             <p className="text-gray-400 text-lg">Games, apps, and experiments</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {/* Card 1 - RepReady */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -173,14 +173,18 @@ export default function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
               whileHover={{ scale: 1.02 }}
-              className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+              className="relative h-full min-h-[280px] rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-teal-500/30 to-emerald-500/30" style={{ filter: 'blur(30px)' }} />
-              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
+              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm gap-4">
                 <Badge className="self-end bg-primary/20 text-primary border-primary/30">In Development</Badge>
-                <div>
-                  <Badge className="mb-3 bg-cyan-500/20 text-cyan-300 border-cyan-500/30">RepReady</Badge>
-                  <p className="text-sm text-gray-300">Gym recovery tracker · Daily check-in · Smart readiness score</p>
+                <div className="space-y-3 text-left">
+                  <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/30">RepReady</Badge>
+                  <p className="text-base font-semibold text-white font-[family-name:var(--font-poppins)]">
+                    {'"Am I ready to train today?"'}
+                  </p>
+                  <p className="text-sm text-gray-300 leading-relaxed">
+                    Daily gym recovery tracker. No wearable, no account, no internet.                  </p>
                 </div>
               </div>
             </motion.div>
@@ -192,11 +196,11 @@ export default function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
-              className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+              className="relative h-full min-h-[280px] rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-orange-500/30 to-pink-500/30" style={{ filter: 'blur(30px)' }} />
-              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
-                <Badge className="self-end bg-primary/20 text-primary border-primary/30">In Development</Badge>
+              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm gap-4">
+                <Badge className="self-end bg-violet-500/20 text-violet-200 border-violet-500/30">Coming Soon</Badge>
                 <div>
                   <Badge className="mb-3 bg-purple-500/20 text-purple-300 border-purple-500/30">Tower Defense</Badge>
                   <p className="text-sm text-gray-300">Strategic placement · Wave-based · Deep progression</p>
@@ -211,11 +215,11 @@ export default function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
               whileHover={{ scale: 1.02 }}
-              className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+              className="relative h-full min-h-[280px] rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 via-blue-500/30 to-teal-500/30" style={{ filter: 'blur(30px)' }} />
-              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
-                <Badge className="self-end bg-amber-500/20 text-amber-300 border-amber-500/30">Concepting</Badge>
+              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm gap-4">
+                <Badge className="self-end bg-primary/20 text-primary border-primary/30">In Development</Badge>
                 <div>
                   <Badge className="mb-3 bg-green-500/20 text-green-300 border-green-500/30">Incremental</Badge>
                   <p className="text-sm text-gray-300">Idle progression · Strategy upgrades · Long-term growth</p>
