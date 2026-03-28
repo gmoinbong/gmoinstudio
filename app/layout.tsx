@@ -5,15 +5,16 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const poppins = Poppins({ 
-  subsets: ['latin'], 
+const poppins = Poppins({
+  subsets: ['latin'],
   weight: ['400', '600', '700'],
-  variable: '--font-poppins' 
+  variable: '--font-poppins'
 })
 
 export const metadata: Metadata = {
-  title: 'gmoinstudio | Crafting Engaging Gaming Experiences',
-  description: 'gmoinstudio — independent game studio focused on strategy and innovative mechanics. Building deep, engaging gameplay experiences.',
+  title: 'gmoinstudio | Crafting Digital Experiences That Matter',
+  description:
+    'gmoinstudio — independent studio building games and apps with thoughtful design and modern technology. Digital products that solve real problems and deliver genuine entertainment.',
   generator: 'v0.app',
 }
 

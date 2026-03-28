@@ -59,7 +59,7 @@ export default function Page() {
         {/* Dark gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-blue-900/20 to-background" />
         <Particles />
-        
+
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -78,18 +78,18 @@ export default function Page() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-6xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)] text-balance"
           >
-            Crafting Engaging Gaming Experiences
+            Crafting Digital Experiences That Matter
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-400 mb-8 text-balance"
           >
-            Independent game studio focused on strategy and innovative mechanics
+            Independent studio building games and apps with thoughtful design and modern technology
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ export default function Page() {
           >
             Who We Are
           </motion.h2>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -136,13 +136,16 @@ export default function Page() {
             className="space-y-6 text-gray-300 leading-relaxed text-center"
           >
             <p>
-              {"We're an independent game development studio passionate about creating deep, engaging gameplay experiences. Specializing in strategy games with innovative mechanics, our focus is on player experience and replayability."}
+              {
+                "We're an independent studio passionate about creating digital products people actually want to use. From strategy games to utility apps, our focus is always the same — thoughtful design, clean architecture, and experiences that respect the user."
+              }
             </p>
             <p>
-              Currently in active development, {"we're"} building games that challenge and reward strategic thinking. Our commitment to quality means we take the time to refine every mechanic, balance every system, and ensure every decision matters.
+              Currently in active development across multiple projects, we build things that solve real problems or create genuine entertainment. Our commitment to quality means we take time to get the details right, whether{" "}
+              {"that's"} balancing a game mechanic or refining a daily workflow.
             </p>
             <p>
-              We believe in creating games that respect player intelligence and offer meaningful choices. {"Whether it's"} managing resources, optimizing strategies, or adapting to dynamic challenges, our games are designed to keep you thinking.
+              We believe software should be purposeful. Every interaction, every screen, every decision in our products is designed to feel natural and earned.
             </p>
           </motion.div>
         </div>
@@ -159,11 +162,11 @@ export default function Page() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-white mb-4 font-[family-name:var(--font-poppins)]">Our Projects</h2>
-            <p className="text-gray-400 text-lg">Currently in development</p>
+            <p className="text-gray-400 text-lg">Games, apps, and experiments</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Card 1 - Tower Defense */}
+            {/* Card 1 - RepReady */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -172,17 +175,17 @@ export default function Page() {
               whileHover={{ scale: 1.02 }}
               className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-orange-500/30 to-pink-500/30" style={{ filter: 'blur(30px)' }} />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-teal-500/30 to-emerald-500/30" style={{ filter: 'blur(30px)' }} />
               <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
-                <Badge className="self-end bg-primary/20 text-primary border-primary/30">Coming Soon</Badge>
+                <Badge className="self-end bg-primary/20 text-primary border-primary/30">In Development</Badge>
                 <div>
-                  <Badge className="mb-3 bg-purple-500/20 text-purple-300 border-purple-500/30">Tower Defense</Badge>
-                  <p className="text-sm text-gray-300">Strategic placement • Wave-based • Deep progression</p>
+                  <Badge className="mb-3 bg-cyan-500/20 text-cyan-300 border-cyan-500/30">RepReady</Badge>
+                  <p className="text-sm text-gray-300">Gym recovery tracker · Daily check-in · Smart readiness score</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 2 - Clicker */}
+            {/* Card 2 - Tower Defense */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -191,17 +194,17 @@ export default function Page() {
               whileHover={{ scale: 1.02 }}
               className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 via-blue-500/30 to-teal-500/30" style={{ filter: 'blur(30px)' }} />
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-orange-500/30 to-pink-500/30" style={{ filter: 'blur(30px)' }} />
               <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
-                <Badge className="self-end bg-green-500/20 text-green-300 border-green-500/30">In Development</Badge>
+                <Badge className="self-end bg-primary/20 text-primary border-primary/30">In Development</Badge>
                 <div>
-                  <Badge className="mb-3 bg-green-500/20 text-green-300 border-green-500/30">Incremental</Badge>
-                  <p className="text-sm text-gray-300">Idle progression • Strategy upgrades • Long-term growth</p>
+                  <Badge className="mb-3 bg-purple-500/20 text-purple-300 border-purple-500/30">Tower Defense</Badge>
+                  <p className="text-sm text-gray-300">Strategic placement · Wave-based · Deep progression</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 3 - Future */}
+            {/* Card 3 - Incremental */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -210,11 +213,13 @@ export default function Page() {
               whileHover={{ scale: 1.02 }}
               className="relative aspect-video rounded-2xl overflow-hidden backdrop-blur-xl bg-card/60 border border-primary/20 group hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-700/30 via-gray-600/30 to-gray-500/30" style={{ filter: 'blur(30px)' }} />
-              <div className="relative h-full p-6 flex flex-col justify-center items-center backdrop-blur-sm">
-                <Badge className="mb-4 bg-gray-500/20 text-gray-300 border-gray-500/30">Concepting</Badge>
-                <p className="text-4xl mb-2">{'?'}</p>
-                <p className="text-gray-400">More to come...</p>
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 via-blue-500/30 to-teal-500/30" style={{ filter: 'blur(30px)' }} />
+              <div className="relative h-full p-6 flex flex-col justify-between backdrop-blur-sm">
+                <Badge className="self-end bg-amber-500/20 text-amber-300 border-amber-500/30">Concepting</Badge>
+                <div>
+                  <Badge className="mb-3 bg-green-500/20 text-green-300 border-green-500/30">Incremental</Badge>
+                  <p className="text-sm text-gray-300">Idle progression · Strategy upgrades · Long-term growth</p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -246,9 +251,9 @@ export default function Page() {
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center text-3xl">
                 🎯
               </div>
-              <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)]">Game Design</h3>
+              <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)]">Product Design</h3>
               <p className="text-gray-400 leading-relaxed">
-                Creating engaging mechanics with depth and replayability. Balancing complexity with accessibility.
+                Crafting experiences with depth and purpose. Balancing complexity with simplicity, whether it{"'s"} a game mechanic or an app flow.
               </p>
             </motion.div>
 
@@ -265,7 +270,7 @@ export default function Page() {
               </div>
               <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)]">Development</h3>
               <p className="text-gray-400 leading-relaxed">
-                Building with modern tech stack. React Native, TypeScript, scalable architecture for cross-platform experiences.
+                React Native, TypeScript, Expo — modern cross-platform stack for both games and apps. Clean architecture that scales.
               </p>
             </motion.div>
 
@@ -280,9 +285,9 @@ export default function Page() {
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center text-3xl">
                 📊
               </div>
-              <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)]">Systems Design</h3>
+              <h3 className="text-xl font-bold text-white font-[family-name:var(--font-poppins)]">Systems Thinking</h3>
               <p className="text-gray-400 leading-relaxed">
-                Crafting intricate progression systems, economies, and player feedback loops that keep players engaged.
+                Designing progression systems, feedback loops, and user journeys that keep people engaged for the right reasons.
               </p>
             </motion.div>
           </div>
@@ -297,7 +302,7 @@ export default function Page() {
             backgroundSize: '40px 40px'
           }} />
         </div>
-        
+
         <div className="max-w-4xl mx-auto relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -347,9 +352,9 @@ export default function Page() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-poppins)]">Player-First Development</h3>
+              <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-poppins)]">User-First Development</h3>
               <p className="text-gray-300 leading-relaxed">
-                We prioritize meaningful gameplay over monetization gimmicks. Regular testing and iteration based on player feedback. Transparent development process.
+                We prioritize meaningful experiences over engagement tricks. Regular testing and iteration based on real feedback. No dark patterns, no bloat.
               </p>
             </motion.div>
 
@@ -363,7 +368,7 @@ export default function Page() {
             >
               <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-poppins)]">Quality Over Speed</h3>
               <p className="text-gray-300 leading-relaxed">
-                Taking time to get mechanics right. Comprehensive testing and balancing. No release until {"it's"} truly ready.
+                Taking time to get things right. Comprehensive testing across devices. Nothing ships until it earns its place.
               </p>
             </motion.div>
           </div>
@@ -411,7 +416,7 @@ export default function Page() {
             </a>
             <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-card border border-primary/20 rounded-lg flex items-center justify-center hover:border-primary hover:shadow-lg hover:shadow-primary/30 transition-all duration-300">
               <svg className="w-5 h-5 text-gray-300 hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
               </svg>
             </a>
           </motion.div>
@@ -484,7 +489,7 @@ export default function Page() {
             </div>
           </div>
           <p className="text-center text-gray-500 text-sm mt-6">
-            {'Made with 🎮 and ☕'}
+            {'Made with ✦ and ☕'}
           </p>
         </div>
       </footer>
