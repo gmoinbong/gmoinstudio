@@ -484,8 +484,6 @@ export default function Page() {
               <Link href="/terms" className="text-primary hover:underline transition-all duration-300">
                 Terms of Service
               </Link>
-              <span>•</span>
-              <a href="#" className="hover:text-primary transition-colors duration-300">Press Kit</a>
             </div>
           </div>
           <p className="text-center text-gray-500 text-sm mt-6">
