@@ -4,6 +4,8 @@ import { Inter, Poppins } from 'next/font/google'
 
 import './globals.css'
 
+import { Metrics } from '@/app/metrics'
+
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Metrics />
+        {children}
+      </body>
     </html>
   )
 }
